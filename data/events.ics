@@ -1,0 +1,254 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//security-events-hub//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Security events
+X-WR-CALDESC:CTFs, conferences, meetups and bug bounty events
+BEGIN:VEVENT
+UID:708f4d1734fe@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261018
+SUMMARY:X-Ops Conference Dubai
+LOCATION:Dubai\, United Arab Emirates
+URL:https://xopsconference.com
+DESCRIPTION:https://xopsconference.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:511ebf63c2e6@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261021
+SUMMARY:TechEx Europe
+LOCATION:Amsterdam\, Netherlands
+URL:https://techexevent.com/europe
+DESCRIPTION:https://techexevent.com/europe
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:afad9383db86@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261022
+SUMMARY:AMTSO Cyber Research Conference
+LOCATION:Brussels\, Belgium
+URL:https://www.amtso.org/special-events/amtso-cyber-research-conference-20
+ 26
+DESCRIPTION:https://www.amtso.org/special-events/amtso-cyber-research-confe
+ rence-2026
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:d3101d145442@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261023
+SUMMARY:swampUP Europe
+LOCATION:Barcelona\, Spain
+URL:https://swampup.jfrog.com/europe
+DESCRIPTION:https://swampup.jfrog.com/europe
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:3d1bc265ba2d@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:All Day AI
+LOCATION:Online
+URL:https://www.alldayai.com
+DESCRIPTION:https://www.alldayai.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:6654c18c8be0@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261105
+SUMMARY:AI DevCon NYC
+LOCATION:Online
+URL:https://tessl.io/devcon
+DESCRIPTION:https://tessl.io/devcon
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:64067d7c472e@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261107
+SUMMARY:Nullcon Berlin
+LOCATION:Berlin\, Germany
+URL:https://nullcon.net/event/nullcon-berlin-2026
+DESCRIPTION:https://nullcon.net/event/nullcon-berlin-2026
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:7bae90fbbc62@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261105
+SUMMARY:S2N: Storage Server Network
+LOCATION:Berlin\, Germany
+URL:https://s2n.heise.de
+DESCRIPTION:https://s2n.heise.de
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:a68200113a3b@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261111
+SUMMARY:Unhacked 360 Germany: FutureSec Summit
+LOCATION:Online
+URL:https://momentera.org/conference/unhacked-360-germany-futuresec-world-s
+ ummit
+DESCRIPTION:https://momentera.org/conference/unhacked-360-germany-futuresec
+ -world-summit
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:0398a71c3ee1@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:VIC AI Boom
+LOCATION:Melbourne\, Australia
+URL:https://vicaiboom.com
+DESCRIPTION:https://vicaiboom.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:aef3f25d414f@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:API Conference Berlin
+LOCATION:Online
+URL:https://apiconference.net/berlin
+DESCRIPTION:https://apiconference.net/berlin
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:a920ea1fc6a2@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261122
+SUMMARY:X-Ops Conference Madrid
+LOCATION:Madrid\, Spain
+URL:https://xopsconference.com
+DESCRIPTION:https://xopsconference.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:7f6ac99b44b5@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:Workplace Ninjas India
+LOCATION:Delhi\, India
+URL:https://www.wpninjas-india.com
+DESCRIPTION:https://www.wpninjas-india.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:59456640a303@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261204
+SUMMARY:ESPC
+LOCATION:Amsterdam\, Netherlands
+URL:https://www.sharepointeurope.com
+DESCRIPTION:https://www.sharepointeurope.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:6f1d2be1307e@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261205
+SUMMARY:IT Security Summit Munich
+LOCATION:Online
+URL:https://it-security-summit.com/munich
+DESCRIPTION:https://it-security-summit.com/munich
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:d09dff10dd57@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261211
+SUMMARY:IT-Tage
+LOCATION:Frankfurt am Main\, Germany
+URL:https://www.it-tage.org
+DESCRIPTION:https://www.it-tage.org
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:c59e223c077b@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270205
+SUMMARY:Daytona Compute
+LOCATION:San Francisco\, CA\, U.S.A.
+URL:https://compute.daytona.io
+DESCRIPTION:https://compute.daytona.io
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:a1cdf8ae0f8f@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270205
+SUMMARY:TechEx Global
+LOCATION:London\, U.K.
+URL:https://techexevent.com/global
+DESCRIPTION:https://techexevent.com/global
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:2b2d2bebb174@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270409
+SUMMARY:BSides Prague
+LOCATION:Prague\, Czech Republic
+URL:https://bsidesprg.cz
+DESCRIPTION:https://bsidesprg.cz
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:281b6f64fd05@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270612
+SUMMARY:International Conference on Cybersecurity\, AI & Future Digital Inf
+ rastructure
+LOCATION:Singapore\, Singapore
+URL:https://cyberfuture2027.com
+DESCRIPTION:https://cyberfuture2027.com
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:70e43ddc1968@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270619
+SUMMARY:IT Security Summit Berlin
+LOCATION:Online
+URL:https://it-security-summit.com/berlin
+DESCRIPTION:https://it-security-summit.com/berlin
+CATEGORIES:Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:28dcd4c05bd6@security-events-hub
+DTSTAMP:20261017T172153Z
+DTSTART;VALUE=DATE:20271206
+DTEND;VALUE=DATE:20271211
+SUMMARY:IT Security Summit Munich
+LOCATION:Online
+URL:https://it-security-summit.com/munich
+DESCRIPTION:https://it-security-summit.com/munich
+CATEGORIES:Conference
+END:VEVENT
+END:VCALENDAR

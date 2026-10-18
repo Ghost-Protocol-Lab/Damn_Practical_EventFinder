@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security events hub</title>
+  <meta name="description" content="Upcoming CTFs, security conferences, meetups and bug bounty programs, collected from public sources and refreshed every few hours.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F1E33'/%3E%3Crect x='7' y='9' width='18' height='3' rx='1.5' fill='%23F5A524'/%3E%3Crect x='7' y='15' width='13' height='3' rx='1.5' fill='%23F4F6F8'/%3E%3Crect x='7' y='21' width='16' height='3' rx='1.5' fill='%23F4F6F8'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#panel-events">Skip to events</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <h1>Security events</h1>
+      <p class="lede">CTFs, conferences, meetups and bug bounty programs from public sources, online and on-site, refreshed every few hours.</p>
+      <p class="status" id="status" aria-live="polite">Loading events</p>
+      <button type="button" class="btn" id="subscribe-btn">Subscribe in your calendar</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <noscript><p class="notice">This page needs JavaScript to show events.</p></noscript>
+
+    <section class="board" id="board" aria-labelledby="board-title" hidden>
+      <h2 id="board-title">Starting soon</h2>
+      <ol class="board-rows" id="board-rows"></ol>
+    </section>
+
+    <p class="notice" id="notice" role="status" hidden></p>
+
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button type="button" role="tab" id="tab-events" aria-controls="panel-events" aria-selected="true">
+        Events <span class="count" id="count-events"></span>
+      </button>
+      <button type="button" role="tab" id="tab-programs" aria-controls="panel-programs" aria-selected="false" tabindex="-1">
+        Bug bounty programs <span class="count" id="count-programs"></span>
+      </button>
+    </div>
+
+    <section id="panel-events" role="tabpanel" aria-labelledby="tab-events">
+      <form class="filters" id="event-filters" role="search" onsubmit="return false">
+        <label class="field search">
+          <span class="sr">Search events</span>
+          <input type="search" id="q" placeholder="Search by name, city, country or topic" autocomplete="off">
+        </label>
+        <div class="chips" id="type-chips" role="group" aria-label="Event type"></div>
+        <div class="row">
+          <div class="seg" id="mode-seg" role="group" aria-label="Where it happens"></div>
+          <label class="field inline">
+            <span>Starts</span>
+            <select id="range">
+              <option value="all">Any time</option>
+              <option value="7">In the next 7 days</option>
+              <option value="30">In the next 30 days</option>
+              <option value="90">In the next 90 days</option>
+            </select>
+          </label>
+          <label class="check"><input type="checkbox" id="cfp"> <span>Call for papers open</span></label>
+          <button type="button" class="linklike" id="clear-events" hidden>Clear filters</button>
+        </div>
+      </form>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div id="results"></div>
+    </section>
+
+    <section id="panel-programs" role="tabpanel" aria-labelledby="tab-programs" hidden>
+      <p class="panel-intro">Public programs on HackerOne, Bugcrowd, Intigriti and YesWeHack that accept reports right now. Read each program's scope and rules before you test anything.</p>
+      <form class="filters" id="program-filters" role="search" onsubmit="return false">
+        <label class="field search">
+          <span class="sr">Search programs</span>
+          <input type="search" id="pq" placeholder="Search programs by name" autocomplete="off">
+        </label>
+        <div class="row">
+          <label class="field inline">
+            <span>Platform</span>
+            <select id="platform"><option value="">All platforms</option></select>
+          </label>
+          <label class="field inline">
+            <span>Sort by</span>
+            <select id="sort">
+              <option value="payout">Highest payout</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <label class="check"><input type="checkbox" id="bounty-only"> <span>Pays bounties only</span></label>
+          <button type="button" class="linklike" id="clear-programs" hidden>Clear filters</button>
+        </div>
+      </form>
+      <p class="result-count" id="program-count" aria-live="polite"></p>
+      <ol class="programs" id="program-results"></ol>
+      <button type="button" class="btn secondary" id="more-programs" hidden>Show more programs</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p id="tz-note"></p>
+      <p>Data comes from <a href="https://ctftime.org/" rel="noopener">CTFtime</a>, <a href="https://github.com/tech-conferences/conference-data" rel="noopener">tech-conferences/conference-data</a>, <a href="https://github.com/arkadiyt/bounty-targets-data" rel="noopener">arkadiyt/bounty-targets-data</a>, any calendar feeds listed in <code>data/sources.json</code>, and events added by hand in <code>data/manual.json</code>. Check each event's own page before you travel or register.</p>
+    </div>
+  </footer>
+
+  <dialog id="subscribe-dialog" aria-labelledby="sub-title">
+    <form method="dialog" class="dialog-body">
+      <h2 id="sub-title">Subscribe in your calendar</h2>
+      <p>Every upcoming event appears in your calendar app and updates as this page does. Apps check for changes on their own schedule, so new events can take up to a day to show.</p>
+      <label class="field">
+        <span>Calendar feed address</span>
+        <input type="text" id="sub-url" readonly>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="copy-url">Copy address</button>
+        <a class="btn secondary" id="webcal-link" href="#">Open in calendar app</a>
+        <button class="linklike" value="close">Close</button>
+      </div>
+      <p class="hint" id="copy-hint" role="status"></p>
+    </form>
+  </dialog>
+
+  <script src="assets/core.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
